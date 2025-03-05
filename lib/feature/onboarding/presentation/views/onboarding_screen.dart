@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:selaty/core/utils/custom_box_decoration.dart';
 import 'package:selaty/feature/onboarding/presentation/widgets/onboarding_screen_body.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -8,7 +9,11 @@ class OnboardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body:
-        OnboardingScreenBody()
+        Container(
+          height: double.infinity,
+            width: double.infinity,
+            decoration: boxDecoration,
+            child: OnboardingScreenBody())
 
     );
   }

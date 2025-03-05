@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/core/images.dart';
+import 'package:selaty/core/utils/images.dart';
 
 import 'custom_container.dart';
 

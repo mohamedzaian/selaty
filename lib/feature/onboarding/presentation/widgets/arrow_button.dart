@@ -1,8 +1,6 @@
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:selaty/core/media_query.dart';
-import 'package:selaty/feature/auth/presentation/sign_in_screen.dart';
+import 'package:selaty/core/utils/media_query.dart';
 
 
 class ArrowButton extends StatelessWidget {
@@ -22,7 +20,7 @@ class ArrowButton extends StatelessWidget {
       {
         if(currentPage == 2)
           {
-            Get.offAll(()=>SignInScreen() , transition: Transition.rightToLeftWithFade);
+            // Get.offAll(()=>AuthScreen() , transition: Transition.rightToLeftWithFade);
           }
 
         pageController.nextPage(duration: Duration(milliseconds: 200), curve: Curves.easeInOut);

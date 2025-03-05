@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/core/media_query.dart';
+import 'package:selaty/core/utils/media_query.dart';
 
-import '../../../../core/colors.dart';
-import '../../../../core/custom_bold_text.dart';
-import '../../../../core/custom_text.dart';
+import '../../../../core/theme/colors.dart';
+import '../../../../core/utils/custom_bold_text.dart';
+import '../../../../core/utils/custom_text.dart';
 import '../../data/model/onboarding_model.dart';
 import 'custom_logo.dart';
 
@@ -41,7 +41,7 @@ class OnboardingPage extends StatelessWidget {
               CustomText(
                 text: onboardingItems.subtext,
                 size: 22,
-                color: textColor,
+                color: AppColors.textColor,
               ),
             ],
           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selaty/core/media_query.dart';
+import 'package:selaty/core/utils/media_query.dart';
 
 import '../../data/model/onboarding_model.dart';
 
@@ -14,8 +14,6 @@ class CustomLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    print('the width is ${MediaQuery.sizeOf(context).shortestSide}');
-    print ('the orientation is ${MediaQuery.of(context).orientation}');
     return CircleAvatar(
       backgroundColor: onboardingItems.color[0],
 

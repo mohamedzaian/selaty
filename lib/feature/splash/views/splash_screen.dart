@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:selaty/feature/onboarding/presentation/onboarding_screen.dart';
+import 'package:selaty/feature/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:selaty/feature/splash/widgets/splash_screen_body.dart';
 
 class SplashScreen extends StatefulWidget {

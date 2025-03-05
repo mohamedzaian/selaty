@@ -10,19 +10,21 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-
-        children: [
-          CustomColumn(),
-          CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
-            strokeWidth: 5.0,
-
-          )
-
-
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+        
+          children: [
+            CustomColumn(),
+            CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+              strokeWidth: 5.0,
+        
+            )
+        
+        
+          ],
+        ),
       ),
     );
   }
