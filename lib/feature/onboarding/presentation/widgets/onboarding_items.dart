@@ -30,8 +30,8 @@ class OnboardingPage extends StatelessWidget {
           SizedBox(height:context.isLandScape ? context.getWidth * 0.01 :
           context.getWidth * .4,),
           Column(
+            crossAxisAlignment:CrossAxisAlignment.start,
             spacing: 5,
-            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               CustomBoldText(
                 text: onboardingItems.text,

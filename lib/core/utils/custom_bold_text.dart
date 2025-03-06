@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:selaty/core/utils/responsive_text.dart';
 
 class CustomBoldText extends StatelessWidget {
@@ -11,10 +10,11 @@ class CustomBoldText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text , style:GoogleFonts.cairo(
+    return Text(text , style:TextStyle(
+      fontFamily: 'Cairo',
       decoration: TextDecoration.none,
         fontSize: getResponsiveFontSize(context, size),
-        color: color ?? Colors.white,
+        color: color ?? Colors.black,
       fontWeight: FontWeight.bold,
 
     ),);

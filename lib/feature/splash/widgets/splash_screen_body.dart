@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:selaty/core/utils/images.dart';
+import 'package:selaty/core/utils/media_query.dart';
 
 import 'custom_container.dart';
 
@@ -8,8 +9,6 @@ class SplashScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isPortrait =
-        MediaQuery.of(context).orientation == Orientation.portrait;
 
     return SafeArea(
       child: Container(
@@ -21,15 +20,9 @@ class SplashScreenBody extends StatelessWidget {
             fit: BoxFit.fill,
           ),
         ),
-        child: isPortrait ? FractionallySizedBox(
-          heightFactor:  .7 ,
-            alignment:  Alignment.topCenter ,
-            child: CustomContainer()) :
-        FractionallySizedBox(
-          widthFactor: 1,
-            child: SizedBox(
-              width: double.infinity,
-                child: CustomContainer())),
+        child: FractionallySizedBox(
+          heightFactor: context.isLandScape ? 1 :   .7 ,
+            child: CustomContainer())
       ),
     );
   }
