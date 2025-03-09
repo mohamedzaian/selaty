@@ -16,7 +16,7 @@ class SplashScreenBody extends StatelessWidget {
         width: double.infinity ,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(backGroundImage),
+            image: AssetImage(AppImages.backGroundImage),
             fit: BoxFit.fill,
           ),
         ),

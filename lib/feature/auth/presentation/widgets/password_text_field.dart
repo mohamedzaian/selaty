@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:selaty/feature/auth/presentation/views/forget_password_screen.dart';
 
 import '../../../../core/utils/custom_bold_text.dart';
 import '../../../../core/utils/custom_text_field.dart';
@@ -13,6 +15,11 @@ class PasswordTextField extends StatelessWidget {
     return CustomTextField(labelText: 'كلمة السر' , helper: GestureDetector(onTap: ()
     {
 
-    },child: CustomBoldText(text: "هل نسيت كلمة السر", size: 17,)),);
+    },child: InkWell (
+      onTap: ()
+        {
+          Get.to(()=> ForgetPasswordScreen() , transition: Transition.leftToRightWithFade);
+        },
+        child: CustomBoldText(text: "هل نسيت كلمة السر", size: 17,))),);
   }
 }

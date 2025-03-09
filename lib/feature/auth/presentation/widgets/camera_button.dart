@@ -2,19 +2,22 @@ import 'package:flutter/material.dart';
 
 class CameraButton extends StatelessWidget {
   const CameraButton({
-    super.key,
+    super.key, this.borderColor, this.height, this.width,
   });
+  final Color? borderColor ;
+  final double? height ;
+  final double? width ;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 40,
-      height: 40,
+      width: height??  45,
+      height: width ?? 45,
       decoration: BoxDecoration(
           border: Border.all(
-              color: Colors.grey
+              color: borderColor ?? Colors.grey
           ),
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(12),
           color: Colors.white
       ),
       child: Center(

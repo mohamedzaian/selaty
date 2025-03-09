@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 
 class ArrowBack extends StatelessWidget {
   const ArrowBack({
-    super.key,
+    super.key, this.borderColor,
   });
-
+final Color? borderColor;
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 40,
-      height: 40,
+      width: 45,
+      height: 45,
       decoration: BoxDecoration(
           border: Border.all(
-              color: Colors.grey
+              color:borderColor ?? Colors.grey
           ),
           borderRadius: BorderRadius.circular(8),
           color: Colors.white

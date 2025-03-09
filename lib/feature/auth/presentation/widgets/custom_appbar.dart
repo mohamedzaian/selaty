@@ -5,17 +5,19 @@ import 'camera_button.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
-    super.key,
+    super.key, this.leadingIcon, this.actionIcon,
   });
+  final Widget? leadingIcon ;
+  final Widget? actionIcon ;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CameraButton(),
+      actionIcon ??  CameraButton(),
 
-        ArrowBack(),
+       leadingIcon ?? ArrowBack(),
 
 
 

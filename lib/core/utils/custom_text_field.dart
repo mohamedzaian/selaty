@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'custom_bold_text.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key, required this.labelText, this.helper});
+  const CustomTextField({super.key, required this.labelText, this.helper, this.borderColor});
   final String labelText ;
   final Widget? helper ;
+  final Color? borderColor;
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +15,17 @@ class CustomTextField extends StatelessWidget {
       textDirection: TextDirection.rtl,
 
 
+
       decoration: InputDecoration(
+        fillColor: Colors.white,
+        filled: true,
+
+        contentPadding: EdgeInsets.symmetric(vertical: 22, horizontal: 10),
         focusedBorder: OutlineInputBorder(
 
 
           borderRadius: BorderRadius.circular(10.0),
-          borderSide: BorderSide(color: Colors.grey),
+          borderSide: BorderSide(color: borderColor ?? Colors.grey),
         ),
 helper: helper,
         label: Directionality(
@@ -35,7 +41,7 @@ helper: helper,
         alignLabelWithHint: true,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.0),
-          borderSide: BorderSide(color: Colors.grey),
+          borderSide: BorderSide(color: borderColor ?? Colors.grey),
         ),
       ),
     );

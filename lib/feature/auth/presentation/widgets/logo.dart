@@ -25,7 +25,7 @@ class Logo extends StatelessWidget {
             ],
           ),
 
-          Image.asset(logo , scale: 3
+          Image.asset(AppImages.logo , scale: 3
             ,),
 
         ],

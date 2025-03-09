@@ -17,11 +17,11 @@ class OnboardingScreenBody extends StatefulWidget {
 
 class _OnboardingScreenBodyState extends State<OnboardingScreenBody> {
   final List<OnboardingItems> list = [
-    OnboardingItems(logo: shop, text: text1, subtext: subtext1, color: list1),
-    OnboardingItems(logo: shop, text: text2, subtext: subtext2, color: list2),
+    OnboardingItems(logo: AppImages.shop, text: text1, subtext: subtext1, color: list1),
+    OnboardingItems(logo: AppImages.shop, text: text2, subtext: subtext2, color: list2),
 
     OnboardingItems(
-      logo: delivery,
+      logo: AppImages.delivery,
       text: text3,
       subtext: subtext3,
       color: list3,

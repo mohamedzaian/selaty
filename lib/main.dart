@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:selaty/core/theme/colors.dart';
 import 'package:selaty/feature/splash/views/splash_screen.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       builder: DevicePreview.appBuilder,
       theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.whiteColor
 
         // fontFamily: 'Cairo'
       ),

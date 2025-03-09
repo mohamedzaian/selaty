@@ -4,7 +4,7 @@ import 'images.dart';
 
 Decoration boxDecoration = BoxDecoration(
   image: DecorationImage(
-    image: AssetImage(backGroundImage),
+    image: AssetImage(AppImages.backGroundImage),
     fit: BoxFit.fill,
   ),
 );
