@@ -7,4 +7,5 @@ class AppColors
  static final Color blueColor = Color(0xff375794);
  static final Color greyColor = Color(0xff8B8B8B);
  static final Color whiteColor = Color(0xffFFFFFF);
+ static final Color backgroundColor = Color(0xffE0E0E0);
 }

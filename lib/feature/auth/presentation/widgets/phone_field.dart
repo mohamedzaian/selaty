@@ -16,15 +16,15 @@ final FocusNode focusNode = FocusNode();
       child: IntlPhoneField(
         readOnly: true,
         autofocus: true,
-        keyboardType: TextInputType.number,
+        keyboardType: TextInputType.phone,
         focusNode: focusNode,
         decoration: InputDecoration(
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
-              color: Colors.white
+              color: Colors.grey
             )
           ),
-label: CustomText(text: 'رقم الهاتف', size: 18),
+label: CustomText(text: 'رقم الهاتف', size: 20),
 
           alignLabelWithHint: true,
         ),

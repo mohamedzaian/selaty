@@ -36,7 +36,7 @@ focusedPinTheme: PinTheme(
         width: context.getWidth * 0.2,
         height: context.getWidth * 0.23,
         textStyle: TextStyle(
-          color: AppColors.whiteColor,
+          color: Colors.black,
           fontSize: 34,
           fontWeight: FontWeight.bold,
         ),

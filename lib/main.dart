@@ -3,7 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:selaty/core/theme/colors.dart';
-import 'package:selaty/feature/splash/views/splash_screen.dart';
+import 'package:selaty/feature/home/presentation/views/main_screen.dart';
+
 
 void main() {
   runApp(DevicePreview(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       locale: Locale('ar'),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: MainScreen(),
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:selaty/core/utils/responsive_text.dart';
 
 class CustomText extends StatelessWidget {
-   CustomText({super.key, required this.text, required this.size, this.color});
+  const CustomText({super.key, required this.text, required this.size, this.color});
 final String text;
 final double size;
 final Color? color ;

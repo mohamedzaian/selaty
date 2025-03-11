@@ -15,7 +15,7 @@ class ChangePasswordScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Focus(
+    return Focus(
       autofocus: true,
 
       child: GestureDetector(
@@ -24,47 +24,71 @@ class ChangePasswordScreenBody extends StatelessWidget {
           FocusManager.instance.primaryFocus?.unfocus();
         },
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal:20.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: SingleChildScrollView(
             child: Column(
               children: [
                 AppBar(
                   backgroundColor: AppColors.whiteColor,
                   title: CustomBoldText(
-                    text:"تغيير كلمة المرور" ,
+                    text: "تغيير كلمة المرور",
                     size: 18,
                     color: AppColors.textColor,
                   ),
-            
+
                   centerTitle: true,
-                  leading: CameraButton(borderColor: AppColors.whiteColor , width: 30, height: 30,),
+                  leading: CameraButton(
+                    borderColor: AppColors.whiteColor,
+                    width: 30,
+                    height: 30,
+                  ),
                   actions: [ArrowBack(borderColor: AppColors.whiteColor)],
                 ),
-                SizedBox(
-                  height: context.getHeight * 0.05,
+                SizedBox(height: context.getHeight * 0.05),
+                CustomBoldText(
+                  text: 'ادخل كلمة المرور الجديدة',
+                  size: 18,
+                  color: AppColors.greyColor,
                 ),
-                CustomBoldText(text: 'ادخل كلمة المرور الجديدة', size: 18, color: AppColors.greyColor,),
-                SizedBox(
-                  height: context.getHeight * 0.1,
+                SizedBox(height: context.getHeight * 0.1),
+                CustomTextField(
+                  labelText: "كلمة المرور الحالي",
+                  borderColor: AppColors.whiteColor,
+                  suffixIcon: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.visibility_off_outlined,
+                      size: 30,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
                 ),
-                CustomTextField(labelText:"كلمة المرور الحالي"  ,borderColor: AppColors.whiteColor,),
-                SizedBox(
-                  height: context.getHeight * 0.04,
+                SizedBox(height: context.getHeight * 0.04),
+                CustomTextField(
+                  labelText: "كلمة المرور الجديدة",
+                  borderColor: AppColors.whiteColor,
+                  suffixIcon: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.visibility_off_outlined,
+                      size: 30,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
                 ),
-                CustomTextField(labelText:"كلمة المرور الجديدة"  ,borderColor: AppColors.whiteColor,),
-                SizedBox(
-                  height: context.getHeight * 0.1,
+                SizedBox(height: context.getHeight * 0.1),
+                CustomButton(
+                  text: 'تغير',
+                  textSize: 20,
+                  color: AppColors.greenColor,
+                  onPressed: () {
+                    Get.to(
+                      () => ChangePasswordDone(),
+                      transition: Transition.leftToRightWithFade,
+                    );
+                  },
                 ),
-                CustomButton(text: 'تغير', textSize: 20 ,color:AppColors.greenColor,
-                onPressed: ()
-                  {
-                    Get.to(()=> ChangePasswordDone() , transition: Transition.leftToRightWithFade);
-                  },)
-            
-            
-            
               ],
-            
             ),
           ),
         ),
