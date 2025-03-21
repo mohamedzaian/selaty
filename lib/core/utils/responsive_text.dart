@@ -21,7 +21,7 @@ double getScaleFactor (BuildContext context)
   {
     return width / 700;
   }
-  else
+
 
     return width / 1000;
 

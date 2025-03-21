@@ -18,7 +18,7 @@ final FocusNode focusNode = FocusNode();
         autofocus: true,
         keyboardType: TextInputType.phone,
         focusNode: focusNode,
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
               color: Colors.grey
@@ -32,7 +32,6 @@ label: CustomText(text: 'رقم الهاتف', size: 20),
         textAlign: TextAlign.center, // Aligns text to the right for RTL
         initialCountryCode: 'EG', // Example: Saudi Arabia
         onChanged: (phone) {
-          print(phone.completeNumber);
         },
       ),
     );

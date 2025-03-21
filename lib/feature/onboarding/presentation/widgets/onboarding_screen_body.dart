@@ -9,7 +9,7 @@ import 'arrow_button.dart';
 import 'onboarding_items.dart';
 
 class OnboardingScreenBody extends StatefulWidget {
-  OnboardingScreenBody({super.key});
+  const OnboardingScreenBody({super.key});
 
   @override
   State<OnboardingScreenBody> createState() => _OnboardingScreenBodyState();

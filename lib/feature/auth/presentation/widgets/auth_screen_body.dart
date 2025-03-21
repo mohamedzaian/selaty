@@ -17,8 +17,8 @@ class AuthScreenBody extends StatelessWidget {
       decoration: boxDecoration,
       child: FractionallySizedBox(
         heightFactor: context.isLandScape ? .8:  0.5,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             spacing: 20,
             children: [

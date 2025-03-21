@@ -11,18 +11,18 @@ class SearchTextFiled extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: context.actualWidth * 0.7,
       child: CustomTextField(
         hintText: 'البحث عن المنتجات...',
         borderColor: Colors.white,
         vertical: 20,
-        suffixIcon:Icon(Icons.search , size: 30, color: AppColors.greyColor,
+        suffixIcon:const Icon(Icons.search , size: 30, color: AppColors.greyColor,
         ) ,
         prefixIcon:IconButton(onPressed: ()
         {
 
-        }, icon: Icon(Icons.clear , size: 20,color: Colors.black,)) ,
+        }, icon: const Icon(Icons.clear , size: 20,color: Colors.black,)) ,
       ),
     );
   }

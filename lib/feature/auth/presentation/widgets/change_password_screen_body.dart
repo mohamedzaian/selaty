@@ -30,22 +30,22 @@ class ChangePasswordScreenBody extends StatelessWidget {
               children: [
                 AppBar(
                   backgroundColor: AppColors.whiteColor,
-                  title: CustomBoldText(
+                  title: const CustomBoldText(
                     text: "تغيير كلمة المرور",
                     size: 18,
                     color: AppColors.textColor,
                   ),
 
                   centerTitle: true,
-                  leading: CameraButton(
+                  leading: const CameraButton(
                     borderColor: AppColors.whiteColor,
                     width: 30,
                     height: 30,
                   ),
-                  actions: [ArrowBack(borderColor: AppColors.whiteColor)],
+                  actions: const [ArrowBack(borderColor: AppColors.whiteColor)],
                 ),
                 SizedBox(height: context.getHeight * 0.05),
-                CustomBoldText(
+                const CustomBoldText(
                   text: 'ادخل كلمة المرور الجديدة',
                   size: 18,
                   color: AppColors.greyColor,
@@ -56,7 +56,7 @@ class ChangePasswordScreenBody extends StatelessWidget {
                   borderColor: AppColors.whiteColor,
                   suffixIcon: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.visibility_off_outlined,
                       size: 30,
                       color: AppColors.greyColor,
@@ -69,7 +69,7 @@ class ChangePasswordScreenBody extends StatelessWidget {
                   borderColor: AppColors.whiteColor,
                   suffixIcon: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.visibility_off_outlined,
                       size: 30,
                       color: AppColors.greyColor,
@@ -83,7 +83,7 @@ class ChangePasswordScreenBody extends StatelessWidget {
                   color: AppColors.greenColor,
                   onPressed: () {
                     Get.to(
-                      () => ChangePasswordDone(),
+                      () => const ChangePasswordDone(),
                       transition: Transition.leftToRightWithFade,
                     );
                   },

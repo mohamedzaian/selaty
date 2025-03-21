@@ -14,6 +14,6 @@ class ResendOtpButton extends StatelessWidget {
     {
 
     },
-        child: CustomBoldText(text: '.اعادة ارسال رمز جديد', size: 17 ,color: AppColors.redColor,));
+        child: const CustomBoldText(text: '.اعادة ارسال رمز جديد', size: 17 ,color: AppColors.redColor,));
   }
 }

@@ -12,18 +12,18 @@ class CustomCarouselSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-      options: CarouselOptions(height: context.actualHeight  * 0.15),
+      options: CarouselOptions(height: context.isLandScape ?context.actualHeight  * 0.35 :context.actualHeight  * 0.15),
       items: [1,2,3,4,5].map((i) {
         return Builder(
           builder: (BuildContext context) {
             return Container(
-              width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.symmetric(horizontal: 5.0),
+              width: context.isLandScape ? context.actualWidth * 0.7 :context.getWidth,
+              margin: const EdgeInsets.symmetric(horizontal: 5.0),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  image: DecorationImage(image:
+                  image: const DecorationImage(image:
                   AssetImage(AppImages.fruitCategory),
-                      fit: BoxFit.fill)
+                      fit: BoxFit.cover)
 
 
 

@@ -17,7 +17,7 @@ class Logo extends StatelessWidget {
 
       child: Row(
         children: [
-          Column(
+          const Column(
             children: [
               CustomBoldText(text: "ســــلتي", size: 40 , color: AppColors.redColor,),
 

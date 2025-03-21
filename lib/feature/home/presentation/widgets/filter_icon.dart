@@ -18,7 +18,7 @@ class FilterIcon extends StatelessWidget {
         color: AppColors.redColor,
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Icon(
+      child: const Icon(
         FontAwesomeIcons.slidersH,
         size: 32,
         color: Colors.white,

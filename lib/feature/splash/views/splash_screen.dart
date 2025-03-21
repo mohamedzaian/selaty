@@ -14,15 +14,15 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-Future.delayed(Duration(seconds: 3), ()
+Future.delayed(const Duration(seconds: 3), ()
 {
-  Get.offAll(()=> OnboardingScreen() ,transition:  Transition.rightToLeftWithFade);
+  Get.offAll(()=> const OnboardingScreen() ,transition:  Transition.rightToLeftWithFade);
 });
     super.initState();
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
 
       body: SplashScreenBody(),
 

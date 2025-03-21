@@ -10,6 +10,6 @@ class UserName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBoldText(text: 'مصطفي الاعصر', size: 20 , color: AppColors.textColor,);
+    return const CustomBoldText(text: 'مصطفي الاعصر', size: 20 , color: AppColors.textColor,);
   }
 }

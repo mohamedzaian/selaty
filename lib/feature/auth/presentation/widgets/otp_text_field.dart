@@ -20,7 +20,7 @@ class OtpTextField extends StatelessWidget {
 focusedPinTheme: PinTheme(
   width: context.getWidth * 0.23,
   height: context.getWidth * 0.25,
-  textStyle: TextStyle(
+  textStyle: const TextStyle(
     color: AppColors.whiteColor,
     fontSize: 34,
     fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ focusedPinTheme: PinTheme(
       defaultPinTheme: PinTheme(
         width: context.getWidth * 0.2,
         height: context.getWidth * 0.23,
-        textStyle: TextStyle(
+        textStyle: const TextStyle(
           color: Colors.black,
           fontSize: 34,
           fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ focusedPinTheme: PinTheme(
       ),
       onCompleted: (value)
       {
-        Get.to(()=> ChangePasswordScreen() , transition: Transition.leftToRightWithFade);
+        Get.to(()=> const ChangePasswordScreen() , transition: Transition.leftToRightWithFade);
       },
     );
   }

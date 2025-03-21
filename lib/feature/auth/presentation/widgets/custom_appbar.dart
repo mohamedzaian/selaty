@@ -15,9 +15,9 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-      actionIcon ??  CameraButton(),
+      actionIcon ??  const CameraButton(),
 
-       leadingIcon ?? ArrowBack(),
+       leadingIcon ?? const ArrowBack(),
 
 
 

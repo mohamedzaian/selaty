@@ -24,7 +24,7 @@ class CameraButton extends StatelessWidget {
         child: IconButton(onPressed: ()
         {
 
-        }, icon: Icon(Icons.camera_alt_outlined, size: 25,)  ),
+        }, icon: const Icon(Icons.camera_alt_outlined, size: 25,)  ),
       ),
     );
   }

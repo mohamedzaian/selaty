@@ -13,7 +13,7 @@ class CustomButton extends StatelessWidget {
 final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: onPressed, child: Center(child:CustomBoldText(text: text, size: textSize, color:textColor ?? Colors.white,)),
+    return ElevatedButton(onPressed: onPressed,
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all(color), // Ensures color is applied
         foregroundColor: WidgetStateProperty.all(color ?? Colors.white),
@@ -21,7 +21,7 @@ final void Function()? onPressed;
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
         fixedSize: WidgetStateProperty.all(Size(context.isLandScape ?context.getHeight : width ??  context.getWidth, 60)),
-      ),
+      ), child: Center(child:CustomBoldText(text: text, size: textSize, color:textColor ?? Colors.white,)),
 
     );
   }

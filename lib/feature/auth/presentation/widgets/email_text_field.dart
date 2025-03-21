@@ -10,9 +10,9 @@ class EmailTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomTextField(labelText: 'عنوان البريد الالكتروني',
+    return const CustomTextField(labelText: 'عنوان البريد الالكتروني',
       keyboardType: TextInputType.emailAddress,
-      suffixIcon: Icon(Icons.check_circle_outline ,color: AppColors.greenColor ,size: 30,),
+      suffixIcon:  Icon(Icons.check_circle_outline ,color: AppColors.greenColor ,size: 30,),
     );
   }
 }

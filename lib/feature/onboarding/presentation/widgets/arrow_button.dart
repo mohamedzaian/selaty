@@ -22,16 +22,16 @@ class ArrowButton extends StatelessWidget {
       {
         if(currentPage == 2)
           {
-            Get.offAll(()=>AuthScreen() , transition: Transition.rightToLeftWithFade);
+            Get.offAll(()=>const AuthScreen() , transition: Transition.rightToLeftWithFade);
           }
 
-        pageController.nextPage(duration: Duration(milliseconds: 200), curve: Curves.easeInOut);
+        pageController.nextPage(duration: const Duration(milliseconds: 200), curve: Curves.easeInOut);
 
       },
       child: CircleAvatar(
         radius: context.getWidth * 0.06,
         backgroundColor: color,
-        child:Icon(
+        child:const Icon(
           FontAwesomeIcons.arrowLeft,
           size: 25,
           color: Colors.white,

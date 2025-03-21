@@ -1,10 +1,10 @@
 
 class AppImages {
- static final String backGroundImage = 'assets/images/background.jpg';
- static final String logo = 'assets/images/logo.png';
- static final String shop = 'assets/images/shop.png';
- static final String delivery = 'assets/images/delivery.png';
- static final String key = 'assets/images/key.png';
- static final String person = 'assets/images/person.png';
- static final String fruitCategory = 'assets/images/fruits_category.jpg';
+ static const String backGroundImage = 'assets/images/background.jpg';
+ static const String logo = 'assets/images/logo.png';
+ static const String shop = 'assets/images/shop.png';
+ static const String delivery = 'assets/images/delivery.png';
+ static const String key = 'assets/images/key.png';
+ static const String person = 'assets/images/person.png';
+ static const String fruitCategory = 'assets/images/fruits_category.jpg';
 }

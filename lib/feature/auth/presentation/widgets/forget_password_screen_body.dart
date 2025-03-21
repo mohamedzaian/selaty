@@ -29,23 +29,23 @@ class ForgetPasswordScreenBody extends StatelessWidget {
         {
           Navigator.of(context).pop();
 
-        }, icon: Icon(Icons.arrow_forward_ios))
+        }, icon: const Icon(Icons.arrow_forward_ios))
               ,
               actionIcon: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                children: [IconButton(onPressed: ()
                    {
                    }
-                   , icon: Icon(Icons.camera_alt_outlined)),
-                 CustomBoldText(text: 'تحقق من رقم الهاتف', size: 17, color: AppColors.greyColor,),
+                   , icon: const Icon(Icons.camera_alt_outlined)),
+                 const CustomBoldText(text: 'تحقق من رقم الهاتف', size: 17, color: AppColors.greyColor,),
                  
         
                ],
               ),
             ),
-             Container(
+             SizedBox(
                width: context.getWidth * .8,
-                 child: CustomBoldText(text: 'لقد ارسلنا لك رسالة نصية قصيرة تحتوي علي رمز ال الرقم', size: 15,color: Colors.grey,)),
+                 child: const CustomBoldText(text: 'لقد ارسلنا لك رسالة نصية قصيرة تحتوي علي رمز ال الرقم', size: 15,color: Colors.grey,)),
             SizedBox(
               height: context.getWidth * 0.2,
             ),
@@ -56,7 +56,7 @@ class ForgetPasswordScreenBody extends StatelessWidget {
             CustomButton(text: 'تاكيد', textSize: 17 , color: AppColors.greenColor,
             onPressed: ()
               {
-Get.to(()=> OtpScreen(), transition: Transition.leftToRightWithFade);             },)
+Get.to(()=> const OtpScreen(), transition: Transition.leftToRightWithFade);             },)
         
         
           ],

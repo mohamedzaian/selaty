@@ -6,7 +6,7 @@ class SearchScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Center(
+    return  const Center(
       child: CustomBoldText(text: 'Search Screen', size: 20),
     );
   }

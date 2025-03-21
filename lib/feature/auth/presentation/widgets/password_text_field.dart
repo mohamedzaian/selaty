@@ -14,15 +14,15 @@ class PasswordTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextField(
-      suffixIcon: Icon(Icons.visibility_off_outlined,color: AppColors.greyColor,size: 30,),
+      suffixIcon: const Icon(Icons.visibility_off_outlined,color: AppColors.greyColor,size: 30,),
       labelText: 'كلمة السر' , helper: GestureDetector(onTap: ()
     {
 
     },child: InkWell (
       onTap: ()
         {
-          Get.to(()=> ForgetPasswordScreen() , transition: Transition.leftToRightWithFade);
+          Get.to(()=> const ForgetPasswordScreen() , transition: Transition.leftToRightWithFade);
         },
-        child: CustomBoldText(text: "هل نسيت كلمة السر", size: 17,))),);
+        child: const CustomBoldText(text: "هل نسيت كلمة السر", size: 17,))),);
   }
 }

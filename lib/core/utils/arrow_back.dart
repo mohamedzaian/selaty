@@ -22,7 +22,7 @@ final Color? borderColor;
         {
           Navigator.of(context).pop();
 
-        }, icon: Icon(Icons.arrow_forward_ios_sharp, size: 25,)  ),
+        }, icon: const Icon(Icons.arrow_forward_ios_sharp, size: 25,)  ),
       ),
     );
   }

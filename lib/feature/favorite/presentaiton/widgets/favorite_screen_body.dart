@@ -6,7 +6,7 @@ class FavoriteScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: CustomBoldText(text: 'Favorite Screen', size: 20),
     );
   }

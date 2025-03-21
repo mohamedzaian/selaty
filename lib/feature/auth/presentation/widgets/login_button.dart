@@ -15,7 +15,7 @@ class LoginButton extends StatelessWidget {
     return CustomButton(text: 'تسجيل الدخول', textSize: 18, color: AppColors.greenColor ,
     onPressed: ()
       {
-        Get.offAll(()=> HomeScreen()  ,transition: Transition.leftToRightWithFade);
+        Get.offAll(()=> const HomeScreen()  ,transition: Transition.leftToRightWithFade);
       },);
   }
 }

@@ -17,7 +17,7 @@ class SignInButton extends StatelessWidget {
     onPressed:
     ()
       {
-        Get.to(()=>SignInScreen() ,transition: Transition.rightToLeftWithFade );
+        Get.to(()=>const SignInScreen() ,transition: Transition.rightToLeftWithFade );
       },);
   }
 }

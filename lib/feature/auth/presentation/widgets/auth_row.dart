@@ -17,16 +17,16 @@ class AuthRow extends StatelessWidget {
       children: [
         InkWell(onTap: ()
             {
-Get.to(()=> SignInScreen() , transition: Transition.leftToRightWithFade);
+Get.to(()=> const SignInScreen() , transition: Transition.leftToRightWithFade);
             },
-            child: CustomBoldText(text: 'لديك حساب بالفعل؟', size: 16 ,)),
+            child: const CustomBoldText(text: 'لديك حساب بالفعل؟', size: 16 ,)),
         InkWell(
           onTap: ()
           {
-            Get.to(()=> SignUpScreen() , transition: Transition.leftToRightWithFade);
+            Get.to(()=> const SignUpScreen() , transition: Transition.leftToRightWithFade);
 
           },
-          child: Row(
+          child: const Row(
             children: [
               Icon(Icons.arrow_left),
               CustomBoldText(text: 'تسجيل الدخول', size: 16),

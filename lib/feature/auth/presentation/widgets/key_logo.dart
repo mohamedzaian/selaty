@@ -16,7 +16,7 @@ class KeyLogo extends StatelessWidget {
       borderType: BorderType.Circle,
       color: Colors.white,
       strokeWidth: 2,
-      dashPattern: [5, 3], //
+      dashPattern: const [5, 3], //
       child: Center(
         child: CircleAvatar(
 

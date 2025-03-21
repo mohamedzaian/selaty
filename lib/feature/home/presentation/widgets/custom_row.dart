@@ -6,36 +6,40 @@ import '../../../../core/utils/custom_text.dart';
 
 class CustomRow extends StatelessWidget {
   const CustomRow({
-    super.key,
+    super.key, this.rightWidget, this.leftWidget, this.centerWidget,
   });
+  final Widget? rightWidget ;
+  final Widget? centerWidget ;
+  final Widget? leftWidget ;
+
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CustomBoldText(
+       rightWidget ?? const CustomBoldText(
           text: 'القيمة الافضل',
-          size: 20,
+          size: 18,
           color: AppColors.textColor,
         ),
-        CustomText(
+      centerWidget??  const CustomText(
           text: '  اعلي المبيعات',
-          size: 18,
+          size: 14,
           color: AppColors.greyColor,
         ),
-        Spacer(),
+        const Spacer(),
         InkWell(
           onTap: () {},
-          child: Row(
+          child: leftWidget ?? const Row(
             children: [
               Icon(
                 Icons.arrow_left,
                 color: AppColors.greyColor,
                 size: 35,
               ),
-              CustomText(
-                text: ' مشاهدة الكل',
-                size: 18,
+            CustomText(
+                text: 'مشاهدة الكل',
+                size: 14,
                 color: AppColors.greyColor,
               ),
             ],

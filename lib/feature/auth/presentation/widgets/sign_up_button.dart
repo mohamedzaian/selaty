@@ -14,7 +14,7 @@ class SignUpButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomButton(text: 'انشئ حساب', textSize: 16, color: AppColors.greenColor ,onPressed: ()
       {
-        Get.to(()=> SignUpScreen() , transition: Transition.leftToRightWithFade);
+        Get.to(()=> const SignUpScreen() , transition: Transition.leftToRightWithFade);
       },);
   }
 }

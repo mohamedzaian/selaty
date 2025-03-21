@@ -6,7 +6,7 @@ class NotificationScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Center(
+    return  const Center(
       child: CustomBoldText(text: 'Notificatio Screen', size: 20),
     );
   }

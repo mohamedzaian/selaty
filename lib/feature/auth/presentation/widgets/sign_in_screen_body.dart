@@ -31,21 +31,21 @@ class SignInScreenBody extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  CustomAppBar(),
+                  const CustomAppBar(),
                   SizedBox(height: context.getHeight * 0.08), // 2% of screen height
 
-                  Logo(),
+                  const Logo(),
                   SizedBox(height: context.getHeight * 0.06), // 4% of screen height
 
-                  EmailTextField(),
-                  SizedBox(height: 10,),
-                  PasswordTextField(),
+                  const EmailTextField(),
+                  const SizedBox(height: 10,),
+                  const PasswordTextField(),
                   SizedBox(height: context.getHeight * 0.07), // 3% of screen height
 
-                  LoginButton(),
+                  const LoginButton(),
                   SizedBox(height: context.getHeight * 0.15), // 5% of screen height
 
-                  AuthRow(),
+                  const AuthRow(),
                 ],
               ),
             ),

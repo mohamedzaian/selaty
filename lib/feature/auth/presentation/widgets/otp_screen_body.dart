@@ -18,37 +18,40 @@ class OtpScreenBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [            AppBar(
-            backgroundColor: AppColors.whiteColor,
-            title: CustomBoldText(
-              text: 'التحقق من الهاتف',
-              size: 17,
-              color: AppColors.textColor,
+
+          children: [
+            SizedBox(height: context.getWidth * .20),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CameraButton(borderColor: AppColors.whiteColor),
+                CustomBoldText(
+                  text: 'التحقق من الهاتف',
+                  size: 17,
+                  color: AppColors.textColor,
+                ),
+                ArrowBack(borderColor: AppColors.whiteColor),
+              ],
             ),
 
-            centerTitle: true,
-            leading: CameraButton(borderColor: AppColors.whiteColor , width: 35, height: 35,),
-            actions: [ArrowBack(borderColor: AppColors.whiteColor)],
-          ),
-
             SizedBox(height: context.getWidth * 0.1),
-            CustomBoldText(
+            const CustomBoldText(
               text: 'ادخل رمز OTP الخاص بك هنا',
               size: 18,
               color: AppColors.greyColor,
             ),
             SizedBox(height: context.getWidth * 0.2),
 
-            OtpTextField(),
+            const OtpTextField(),
             SizedBox(height: context.getWidth * 0.1),
-            CustomBoldText(
+            const CustomBoldText(
               text: 'لم يصل الكود ؟',
               size: 17,
               color: AppColors.greyColor,
             ),
             SizedBox(height: context.getWidth * 0.01),
 
-            ResendOtpButton(),
+            const ResendOtpButton(),
             SizedBox(height: context.getWidth * 0.2),
           ],
         ),
@@ -56,4 +59,3 @@ class OtpScreenBody extends StatelessWidget {
     );
   }
 }
-

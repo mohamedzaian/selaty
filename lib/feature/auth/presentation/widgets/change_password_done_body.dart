@@ -14,11 +14,11 @@ class ChangePasswordDoneBody extends StatelessWidget {
     return  Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        KeyLogo(),
+        const KeyLogo(),
         SizedBox(
           height:context.getWidth * 0.13 ,
         ),
-        CustomBoldText(text: 'كلمة المرور الخاصة بك لها', size: 20 , color: AppColors.whiteColor,),
+        const CustomBoldText(text: 'كلمة المرور الخاصة بك لها', size: 20 , color: AppColors.whiteColor,),
         SizedBox(
           height:context.getWidth * 0.13 ,
         ),

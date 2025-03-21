@@ -16,30 +16,31 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => _MainScreenState();
 }
 List <Widget> screens = [
-  SearchScreen(),
-  FavoriteScreen(),
-  HomeScreen(),
-  NotificationScreen(),
-  ProfileScreen(),
+  const SearchScreen(),
+  const FavoriteScreen(),
+  const HomeScreen(),
+  const NotificationScreen(),
+  const ProfileScreen(),
 
 ];
 class _MainScreenState extends State<MainScreen> {
   int selectedIndex = 2 ;
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
     bottomNavigationBar: ConvexAppBar(
       style: TabStyle.fixedCircle,
       backgroundColor: Colors.white,
-        items:   [
-    const TabItem(icon: Icon(Icons.search ,size: 35) , ),
-    const TabItem(icon: Icon(Icons.favorite_border,size: 35) , ),
+        items:   const [
+    TabItem(icon: Icon(Icons.search ,size: 35) , ),
+    TabItem(icon: Icon(Icons.favorite_border,size: 35) , ),
       TabItem(icon: CircleAvatar(
     radius: 35,
     backgroundColor: Color(0xff96A753),
-    backgroundImage: AssetImage(AppImages.logo ),
+    backgroundImage: AssetImage(AppImages.logo , ),
     ), ),
-    const TabItem(icon: Icon(Icons.notifications_none_outlined ,size: 35,), ),
-    const TabItem(icon: Icon(Icons.person_outline_outlined,size: 35), ),
+    TabItem(icon: Icon(Icons.notifications_none_outlined ,size: 35,), ),
+    TabItem(icon: Icon(Icons.person_outline_outlined,size: 35), ),
 
 
     ],

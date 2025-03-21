@@ -12,23 +12,16 @@ class CustomSocialMediaButton extends StatelessWidget {
   final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: onPressed, child: Center(child:Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-
-        CustomBoldText(text: text, size: size , color: color,),
-        Icon(icon , color: color,size: 35,)
-      ],
-    )),
+    return ElevatedButton(onPressed: onPressed,
       style: ButtonStyle(
         fixedSize: WidgetStateProperty.all(Size(context.isLandScape ? context.getWidth * .8: context.getWidth  * .42, 60)),
 
-        backgroundColor: MaterialStateProperty.all(Colors.white), // Force background color
-        foregroundColor: MaterialStateProperty.all(color), // Text/icon color
-        side: MaterialStateProperty.all(
+        backgroundColor: WidgetStateProperty.all(Colors.white), // Force background color
+        foregroundColor: WidgetStateProperty.all(color), // Text/icon color
+        side: WidgetStateProperty.all(
           BorderSide(color: color, width: 1), // Border color and width
         ),
-        shape: MaterialStateProperty.all(
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
 
 
@@ -36,7 +29,14 @@ class CustomSocialMediaButton extends StatelessWidget {
             // Optional: Rounded corners
           ),
         ),
-      ),
+      ), child: Center(child:Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+
+        CustomBoldText(text: text, size: size , color: color,),
+        Icon(icon , color: color,size: 35,)
+      ],
+    )),
 
 
 

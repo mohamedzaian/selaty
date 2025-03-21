@@ -16,8 +16,8 @@ class CustomColumn extends StatelessWidget {
         SizedBox(height: context.isLandScape ? 0 : context.getWidth * 0.1,),
         Image.asset(AppImages.logo , scale: context.isLandScape ? 3 : 2
           ,),
-        CustomBoldText(text: "ســــلتي", size: 40 , color: AppColors.redColor,),
-        CustomBoldText(text: 'S E L A T Y', size: 30 ,color: Colors.black,),
+        const CustomBoldText(text: "ســــلتي", size: 40 , color: AppColors.redColor,),
+        const CustomBoldText(text: 'S E L A T Y', size: 30 ,color: Colors.black,),
         SizedBox(height:  context.getHeight * .06 ),
 
 

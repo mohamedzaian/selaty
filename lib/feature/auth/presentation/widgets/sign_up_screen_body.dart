@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:selaty/core/theme/colors.dart';
 import 'package:selaty/core/utils/custom_bold_text.dart';
 import 'package:selaty/core/utils/custom_button.dart';
-import 'package:selaty/core/utils/custom_socia-media_button.dart';
+import 'package:selaty/core/utils/custom_social_media_button.dart';
 import 'package:selaty/core/utils/custom_text_field.dart';
 import 'package:selaty/core/utils/media_query.dart';
 
@@ -33,20 +33,20 @@ class SignUpScreenBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomAppBar(),
+                const CustomAppBar(),
                 SizedBox(height: context.getHeight * 0.05),
-                CreateAccountText(),
+                const CreateAccountText(),
                 SizedBox(height: context.getHeight * 0.05),
-                CustomTextField(labelText: 'الاسم'),
-                SizedBox(height: 10),
+                const CustomTextField(labelText: 'الاسم'),
+                const SizedBox(height: 10),
 
-                EmailTextField(),
-                SizedBox(height: 10),
+                const EmailTextField(),
+                const SizedBox(height: 10),
                 CustomTextField(
                   labelText: 'كلمة السر',
                   suffixIcon: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.visibility_off_outlined,
                       size: 30,
                       color: AppColors.greyColor,
@@ -54,19 +54,19 @@ class SignUpScreenBody extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: context.getHeight * 0.07),
-                CustomButton(
+                const CustomButton(
                   text: 'اشتراك',
                   textSize: 18,
                   color: AppColors.greenColor,
                 ),
                 SizedBox(height: context.getHeight * 0.04),
 
-                Align(
+                const Align(
                   alignment: Alignment.center,
                   child: CustomBoldText(text: 'او اشترك مع', size: 18),
                 ),
                 SizedBox(height: context.getHeight * 0.03),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CustomSocialMediaButton(
@@ -85,7 +85,7 @@ class SignUpScreenBody extends StatelessWidget {
                 ),
                 SizedBox(height: context.getHeight * 0.04),
 
-                AuthRow(),
+                const AuthRow(),
               ],
             ),
           ),
