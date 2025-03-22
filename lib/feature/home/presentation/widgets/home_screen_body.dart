@@ -3,9 +3,12 @@ import 'package:selaty/core/utils/custom_bold_text.dart';
 import 'package:selaty/core/utils/custom_text.dart';
 import 'package:selaty/core/utils/media_query.dart';
 import 'package:selaty/feature/home/data/models/offer_model.dart';
+import 'package:selaty/feature/home/presentation/views/category_screen.dart';
+import 'package:selaty/feature/home/presentation/views/fruits_screen.dart';
 import 'package:selaty/feature/home/presentation/widgets/offers_list.dart';
 
 import 'package:selaty/feature/home/presentation/widgets/search_text_field.dart';
+import 'package:selaty/feature/profile/presentation/views/profile_screen.dart';
 import '../../../../generated/assets.dart';
 import 'category_list_view.dart';
 import 'custom_carousel_slider.dart';
@@ -58,7 +61,9 @@ class HomeScreenBody extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
 
-                  child: CustomRow(),
+                  child: CustomRow(
+                    navigation: ProfileScreen(),
+                  ),
                 ),
                 SizedBox(height: context.actualHeight * 0.01),
                 const CustomCarouselSlider(),
@@ -67,6 +72,9 @@ class HomeScreenBody extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
 
                   child: CustomRow(
+                    navigation: CategoryScreen(),
+
+
                     rightWidget: CustomBoldText(text: 'التصنيقات', size: 18),
                     centerWidget: Text(''),
                   ),
@@ -77,8 +85,11 @@ class HomeScreenBody extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
                   child: CustomRow(
+                    navigation: FruitsScreen(),
+
                     centerWidget: Text(''),
                     rightWidget: CustomBoldText(text: 'الاكثر مبيعا', size: 20),
+
                   ),
                 ),
                 SizedBox(height: context.actualHeight * 0.01),
@@ -89,6 +100,8 @@ class HomeScreenBody extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10.0),
                   child: CustomRow(
+                    navigation: ProfileScreen(),
+
                     centerWidget: Text(''),
                     rightWidget: CustomBoldText(
                       text: 'تسوق حسب العرض',
@@ -107,6 +120,8 @@ class HomeScreenBody extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10.0),
                   child: CustomRow(
+                    navigation: ProfileScreen(),
+
                     rightWidget: CustomBoldText(text: 'طازج وسريع', size: 22),
                     centerWidget: Text(''),
                     leftWidget: Text(''),
@@ -122,6 +137,8 @@ class HomeScreenBody extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10.0),
                   child: CustomRow(
+                    navigation: ProfileScreen(),
+
                     rightWidget: CustomBoldText(text: 'انتهز الفرصة', size: 22),
                     centerWidget: Text(''),
                   ),
