@@ -14,7 +14,7 @@ final double? height ;
       height: height ?? 45,
       decoration: BoxDecoration(
           border: Border.all(
-              color:borderColor ?? Colors.grey
+              color:borderColor ?? Colors.white
           ),
           borderRadius: BorderRadius.circular(8),
           color: Colors.white

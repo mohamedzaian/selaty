@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           builder: DevicePreview.appBuilder,
           theme: ThemeData(
             fontFamily: 'Cairo',
-            scaffoldBackgroundColor: AppColors.whiteColor
+            scaffoldBackgroundColor: AppColors.backgroundColor
 
             // fontFamily: 'Cairo'
           ),

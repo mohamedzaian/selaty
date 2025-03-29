@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:selaty/core/utils/media_query.dart';
 
-import '../../../../core/theme/colors.dart';
 import '../../../../core/utils/custom_bold_text.dart';
 import '../../../../generated/assets.dart';
+import 'circle_image.dart';
 
 class CategoryContainer extends StatelessWidget {
   const CategoryContainer({
-    super.key, this.width, this.radius, this.heightFactor,  this.bottom,
+    super.key, this.width, this.radius, this.heightFactor,  this.bottom,  this.backGroundColor,
   });
 
   final double? width;
@@ -15,6 +15,7 @@ class CategoryContainer extends StatelessWidget {
 
   final double? heightFactor;
   final double? bottom ;
+  final Color? backGroundColor;
 
   @override
   Widget build(BuildContext context) {
@@ -60,25 +61,11 @@ class CategoryContainer extends StatelessWidget {
               color: Colors.black,
             ),
             const SizedBox(height: 10), // Added space
-            CircleAvatar(
-              backgroundColor: Colors.white,
-              radius: radius ??  26,
-              child:  CircleAvatar(
-                radius: radius == null  ?   23 : radius! + 3,
-                backgroundColor: AppColors.yellowColor,
-
-                child: CircleAvatar(
-                  radius: radius == null  ?   20 : radius! + 3,
-                  backgroundColor: AppColors.yellowColor,
-                  backgroundImage: const AssetImage(
-                    Assets.imagesCategoryIcon,
-                  ),
-                ),
-              ),
-            ),
+            CircleImage(radius: radius, backGroundColor: backGroundColor),
           ],
         ),
       ],
     );
   }
 }
+

@@ -20,7 +20,8 @@ class CustomBoldText extends StatelessWidget {
       decoration: TextDecoration.none,
         fontSize: getResponsiveFontSize(context, size),
         color: color ?? Colors.black,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.bold
+        ,
 
     ),);
   }

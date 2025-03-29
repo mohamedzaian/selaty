@@ -15,7 +15,7 @@ class CameraButton extends StatelessWidget {
       height: width ?? 45,
       decoration: BoxDecoration(
           border: Border.all(
-              color: borderColor ?? Colors.grey
+              color: borderColor ?? Colors.white
           ),
           borderRadius: BorderRadius.circular(12),
           color: Colors.white
@@ -25,6 +25,7 @@ class CameraButton extends StatelessWidget {
         {
 
         }, icon: const Icon(Icons.camera_alt_outlined, size: 25,)  ),
+
       ),
     );
   }

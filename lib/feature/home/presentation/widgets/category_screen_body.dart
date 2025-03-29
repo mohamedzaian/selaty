@@ -50,6 +50,7 @@ class CategoryScreenBody extends StatelessWidget {
                     radius: context.isLandScape ? 40.r :  35.r,
                     heightFactor:  context.isLandScape ?  .5.h : .4.h,
                     width: context.getWidth * .34,
+                    backGroundColor: null,
                   );
                 },
               ),

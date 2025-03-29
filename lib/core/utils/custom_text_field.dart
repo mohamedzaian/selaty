@@ -14,7 +14,7 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.obscure,
     this.hintText,
-    this.vertical, this.prefixIcon,
+    this.vertical, this.prefixIcon, this.node,
   });
   final String? labelText;
   final Widget? helper;
@@ -26,10 +26,12 @@ class CustomTextField extends StatelessWidget {
   final bool? obscure;
   final String? hintText;
   final double? vertical;
+  final FocusNode? node ;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      focusNode: node,
       textAlign: TextAlign.right,
       textDirection: TextDirection.rtl,
       keyboardType: keyboardType,

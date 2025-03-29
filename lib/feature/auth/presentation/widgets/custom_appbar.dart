@@ -7,11 +7,13 @@ import 'camera_button.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
-    super.key, this.leadingIcon, this.actionIcon, this.centerText,
+    super.key, this.leadingIcon, this.actionIcon, this.centerText, this.textColor, this.textSize,
   });
   final Widget? leadingIcon ;
   final Widget? actionIcon ;
   final String? centerText;
+  final Color? textColor;
+  final double? textSize ;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -21,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
 
         Center(
          child:
-         CustomBoldText( text: centerText ?? '' , size: 20,color: AppColors.textColor,),
+         CustomBoldText( text: centerText ?? '' , size: textSize ??  20,color: textColor ?? AppColors.textColor,),
        ),
 
        leadingIcon ?? const ArrowBack(),
