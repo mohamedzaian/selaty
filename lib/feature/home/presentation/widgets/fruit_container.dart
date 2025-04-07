@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:selaty/core/utils/media_query.dart';
+import 'package:selaty/feature/cart/presentation/view/cart_screen.dart';
 
 import '../../../../core/theme/colors.dart';
 import '../../../../core/utils/custom_bold_text.dart';
@@ -103,16 +105,23 @@ class FruitContainer extends StatelessWidget {
                   borderRadius: BorderRadius.only(bottomRight: Radius.circular(12) ,bottomLeft: Radius.circular(12) ),
                   color: Color(0xffE0E0E0)
               ),
-              child: const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
                   children: [
-                    CustomBoldText(text: '40 EGP', size: 16 , color: Colors.black,),
-                    Spacer(),
+                    const CustomBoldText(text: '40 EGP', size: 16 , color: Colors.black,),
+                    const Spacer(),
                     CircleAvatar(
                       radius: 18,
-                      backgroundColor: Color(0xffF03E48),
-                      child: Icon(Icons.shopping_bag_outlined , color: Colors.white,) ,
+                      backgroundColor: const Color(0xffF03E48),
+                      child: Center(
+                        child: IconButton( onPressed: ()
+                          {
+                            Get.to(()=> const CartScreen() ,transition: Transition.leftToRightWithFade);
+
+                          }
+                         , icon: const Icon(Icons.shopping_bag_outlined , size: 25, ), color: Colors.white,),
+                      ) ,
                     )
                   ],
                 ),

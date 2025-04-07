@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:selaty/core/theme/colors.dart';
-import 'package:selaty/core/utils/arrow_back.dart';
 import 'package:selaty/core/utils/media_query.dart';
-import 'package:selaty/feature/auth/presentation/widgets/camera_button.dart';
-import 'package:selaty/feature/auth/presentation/widgets/custom_appbar.dart';
 import 'package:selaty/feature/cart/presentation/widgets/pay_button.dart';
 
 import '../../../../core/utils/custom_bold_text.dart';
+import 'cart_appbar.dart';
 import 'cart_info_container.dart';
 
 class CartScreenBody extends StatefulWidget {
@@ -38,11 +36,7 @@ class _CartScreenBodyState extends State<CartScreenBody> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const CustomAppBar(
-            leadingIcon: CameraButton(borderColor: Colors.white),
-            actionIcon: ArrowBack(borderColor: Colors.white),
-            centerText: 'عربة التسوق',
-          ),
+          const CartAppBar(),
           SizedBox(height: context.actualHeight * 0.02),
 
           SizedBox(
@@ -133,5 +127,6 @@ class _CartScreenBodyState extends State<CartScreenBody> {
     );
   }
 }
+
 
 

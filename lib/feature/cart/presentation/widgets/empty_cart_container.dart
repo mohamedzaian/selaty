@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:selaty/core/utils/media_query.dart';
+import 'package:selaty/feature/cart/presentation/view/adress_screen.dart';
 
 import '../../../../core/theme/colors.dart';
 import '../../../../core/utils/custom_bold_text.dart';
@@ -41,6 +43,10 @@ class EmptyCartContainer extends StatelessWidget {
           ),
 
           CustomButton(
+            onPressed: ()
+            {
+              Get.to(()=> const AddressScreen() , transition: Transition.leftToRightWithFade);
+            },
             height: context.isLandScape ? 50: 70,
             text: 'ابدأ التسوق',
             textSize: 16,

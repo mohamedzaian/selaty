@@ -2,9 +2,9 @@ import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_lazy_indexed_stack/flutter_lazy_indexed_stack.dart';
 import 'package:selaty/core/utils/images.dart';
-import 'package:selaty/feature/cart/presentation/view/cart_screen.dart';
 import 'package:selaty/feature/favorite/presentaiton/view/favorite_screen.dart';
 import 'package:selaty/feature/home/presentation/views/home_screen.dart';
+import 'package:selaty/feature/profile/presentation/views/profile_screen.dart';
 import 'package:selaty/feature/search/presentation/views/search_screen.dart';
 
 import '../../../notification/presentation/views/notification_screen.dart';
@@ -20,7 +20,7 @@ List <Widget> screens = [
   const FavoriteScreen(),
   const HomeScreen(),
   const NotificationScreen(),
-  const CartScreen(),
+  const ProfileScreen(),
 
 ];
 class _MainScreenState extends State<MainScreen> {
@@ -40,7 +40,7 @@ class _MainScreenState extends State<MainScreen> {
     backgroundImage: AssetImage(AppImages.logo , ),
     ), ),
     TabItem(icon: Icon(Icons.notifications_none_outlined ,size: 35,), ),
-    TabItem(icon: Icon(Icons.shopping_cart_outlined,size: 35), ),
+    TabItem(icon: Icon(Icons.person_outline_outlined,size: 35), ),
 
 
     ],

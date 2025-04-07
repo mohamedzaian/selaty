@@ -16,6 +16,8 @@ class PayButton extends StatelessWidget {
       width:
           context.isLandScape ? context.actualWidth * 0.4 : context.actualWidth,
       child:  CustomButton(
+        width:
+        context.isLandScape ? context.actualWidth * 0.4 : context.actualWidth,
         onPressed: ()
         {
          Get.to(()=> const EmptyCartScreen() , transition: Transition.leftToRightWithFade);
