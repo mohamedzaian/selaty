@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517420858905",
+    "project_id": "selaty-76786",
+    "storage_bucket": "selaty-76786.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517420858905:android:b209216cea71cb52aab488",
+        "android_client_info": {
+          "package_name": "com.example.selaty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArwJfv4dyGA5DmYL82Y3xNFlgF98m73rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
